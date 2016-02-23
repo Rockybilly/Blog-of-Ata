@@ -97,14 +97,14 @@ Dictionary with keys:
 github
 ~~~~~~
 
-- ``username``: Github username
+- ``username``: Rockybilly
 - ``num_items``: Number of repositories to show. Default is 3.
 
 
 disqus
 ~~~~~~
 
-- ``username``: Disqus username
+- ``username``: atayardimci
 - ``num_items``: Number of items to be shown. Default is 5.
 
 

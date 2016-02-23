@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <url>
+  <loc>http://atayardimci.me/</loc>
+  <lastmod>2016-02-23T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/2016/</loc>
+  <lastmod>2016-02-23T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/archive.html</loc>
+  <lastmod>2016-02-23T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/categories/</loc>
+  <lastmod>2016-02-23T22:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/galleries/</loc>
+  <lastmod>2016-02-23T22:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/listings/</loc>
+  <lastmod>2016-02-23T22:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/posts/the-very-first-post/</loc>
+  <lastmod>2016-02-23T22:29:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="tr" href="http://atayardimci.me/tr/posts/the-very-first-post/" />
+ </url>
+ <url>
+  <loc>http://atayardimci.me/tr/</loc>
+  <lastmod>2016-02-23T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/tr/2016/</loc>
+  <lastmod>2016-02-23T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/tr/archive.html</loc>
+  <lastmod>2016-02-23T22:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/tr/categories/</loc>
+  <lastmod>2016-02-23T22:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/tr/galleries/</loc>
+  <lastmod>2016-02-23T22:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/tr/posts/the-very-first-post/</loc>
+  <lastmod>2016-02-23T22:29:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="http://atayardimci.me/posts/the-very-first-post/" />
+ </url>
+</urlset>

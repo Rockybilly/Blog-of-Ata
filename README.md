@@ -1,2 +1,0 @@
-# Blog-of-Ata
-Experience.

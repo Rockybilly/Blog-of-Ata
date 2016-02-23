@@ -1,0 +1,4 @@
+Sitemap: http://atayardimci.me/sitemapindex.xml
+
+User-Agent: *
+Host: atayardimci.me

@@ -87,9 +87,7 @@ DEFAULT_LANG = "en"
 # The format is {"translationcode" : "path/to/translation" }
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
-    DEFAULT_LANG: "",
-    "tr": "./tr",
-}
+    DEFAULT_LANG: ""}
 
 # What will translated input files be named like?
 
@@ -131,12 +129,6 @@ NAVIGATION_LINKS = {
         ("/archive.html", "Archive"),
         ("/categories/", "Tags"),
         ("/rss.xml", "RSS feed"),
-    ),
-
-    "tr": (
-        ("/tr/archive.html", "Arşiv"),
-        ("/tr/categories/", "Etiketler"),
-        ("/tr/rss.xml", "RSS kaynağı"),
     ),
 }
 
@@ -1164,8 +1156,22 @@ UNSLUGIFY_TITLES = True
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
-GLOBAL_CONTEXT = {}
 
+github = {
+      'username': 'Rockybilly',
+      'items': 3,
+    }
+
+disqus = {
+      'username': 'atayardimci',
+      'last_items': 5,
+    }
+
+GLOBAL_CONTEXT = {
+      'asides': ['github', 'disqus_last_comments'],
+      'github': github,
+      'disqus': disqus,
+    }
 # Add functions here and they will be called with template
 # GLOBAL_CONTEXT as parameter when the template is about to be
 # rendered

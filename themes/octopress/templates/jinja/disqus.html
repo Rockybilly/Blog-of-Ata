@@ -2,7 +2,7 @@
 <div id="disqus_thread" aria-live="polite">
   <script type="text/javascript">
       var disqus_shortname = '{{ comment_system_id }}';
-      var disqus_identifier = '{%- if identifier %}{{ identifier }}{%- else %}{{ permalink }}{%- endif %}';
+      var disqus_identifier = 'cache' + '{%- if identifier %}{{ identifier }}{%- else %}{{ permalink }}{%- endif %}';
 
       {% if hide_comments %}
       var disqus_script = 'count.js';

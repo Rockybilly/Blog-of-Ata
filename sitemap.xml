@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://atayardimci.me/</loc>
-  <lastmod>2016-02-24T19:17:00Z</lastmod>
+  <lastmod>2016-02-24T21:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://atayardimci.me/2016/</loc>
@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>http://atayardimci.me/archive.html</loc>
-  <lastmod>2016-02-24T19:25:00Z</lastmod>
+  <lastmod>2016-02-24T22:09:00Z</lastmod>
  </url>
  <url>
   <loc>http://atayardimci.me/categories/</loc>
@@ -32,5 +32,9 @@
  <url>
   <loc>http://atayardimci.me/posts/the-very-first-post/</loc>
   <lastmod>2016-02-24T19:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://atayardimci.me/stories/other-things/</loc>
+  <lastmod>2016-02-24T21:36:00Z</lastmod>
  </url>
 </urlset>

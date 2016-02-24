@@ -7,22 +7,14 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://atayardimci.me/galleries/rss.xml</loc>
-  <lastmod>2016-02-23T23:13:00Z</lastmod>
+  <lastmod>2016-02-24T19:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://atayardimci.me/rss.xml</loc>
-  <lastmod>2016-02-23T22:29:00Z</lastmod>
+  <lastmod>2016-02-24T19:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://atayardimci.me/sitemap.xml</loc>
-  <lastmod>2016-02-23T23:13:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://atayardimci.me/tr/galleries/rss.xml</loc>
-  <lastmod>2016-02-23T23:13:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://atayardimci.me/tr/rss.xml</loc>
-  <lastmod>2016-02-23T22:29:00Z</lastmod>
+  <lastmod>2016-02-24T19:25:00Z</lastmod>
  </sitemap>
 </sitemapindex>

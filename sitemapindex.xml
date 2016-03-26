@@ -6,15 +6,39 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://atayardimci.me/categories/cat_python-code.xml</loc>
+  <lastmod>2016-03-26T19:26:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://atayardimci.me/categories/chef.xml</loc>
+  <lastmod>2016-03-26T19:26:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://atayardimci.me/categories/implementation.xml</loc>
+  <lastmod>2016-03-26T19:26:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://atayardimci.me/categories/python.xml</loc>
+  <lastmod>2016-03-26T19:26:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://atayardimci.me/categories/swedish.xml</loc>
+  <lastmod>2016-03-26T19:26:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://atayardimci.me/galleries/images/rss.xml</loc>
+  <lastmod>2016-03-26T19:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://atayardimci.me/galleries/rss.xml</loc>
-  <lastmod>2016-02-24T22:09:00Z</lastmod>
+  <lastmod>2016-03-26T19:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://atayardimci.me/rss.xml</loc>
-  <lastmod>2016-02-24T21:36:00Z</lastmod>
+  <lastmod>2016-03-26T19:26:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://atayardimci.me/sitemap.xml</loc>
-  <lastmod>2016-02-24T22:09:00Z</lastmod>
+  <lastmod>2016-03-26T19:27:00Z</lastmod>
  </sitemap>
 </sitemapindex>

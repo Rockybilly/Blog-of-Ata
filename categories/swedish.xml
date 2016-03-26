@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog of Ata (swedish)</title><link>http://atayardimci.me/</link><description></description><atom:link href="http://atayardimci.me/categories/swedish.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 26 Mar 2016 20:32:28 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>English to Swedish Chef Talk</title><link>http://atayardimci.me/posts/english-to-swedish-chef-talk/</link><dc:creator>Ata YARDIMCI</dc:creator><description>&lt;div class="section" id="introduction"&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;You may have heard of the swedish chef from The Muppet Show. With a unique talking style.
+Let's see an example of it.&lt;/p&gt;
+&lt;iframe width="425" height="344" src="https://www.youtube.com/embed/_8SGRm3JaW8?rel=0&amp;amp;hd=1&amp;amp;wmode=transparent"&gt;&lt;/iframe&gt;&lt;p&gt;Former programmers thought it was funny to implement this into a text conversion program.
+Today we write this implementation, after that, we will write unit tests to see if the result is correct.
+While doing this project, I used &lt;strong&gt;regular expressions&lt;/strong&gt; to get this working. Let's see how I did that.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://atayardimci.me/posts/english-to-swedish-chef-talk/"&gt; Click to read the rest of the article …&lt;/a&gt; (5 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>chef</category><category>implementation</category><category>python</category><category>swedish</category><guid>http://atayardimci.me/posts/english-to-swedish-chef-talk/</guid><pubDate>Sat, 26 Mar 2016 14:54:45 GMT</pubDate></item></channel></rss>

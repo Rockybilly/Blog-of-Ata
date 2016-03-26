@@ -64,132 +64,132 @@ Unfortunately, the extension is no longer supported by the newer firefox version
 <img alt="/galleries/images/beforeafterchef.png" src="../../galleries/images/beforeafterchef.png"><p>Rather than transforming a webpage, I am going to show you how to change raw text. I will share the rules and the tests I derived. After that, you are free to add any of your foundings on your own and make the program even better.</p>
 <p>Lets first create a python file named swedish_chef.py, in that file, let's write our basic template and documentations.</p>
 <table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="#rest_code_840ac76e70724755aafcf48611e0af70-1"> 1</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-2"> 2</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-3"> 3</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-4"> 4</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-5"> 5</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-6"> 6</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-7"> 7</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-8"> 8</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-9"> 9</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-10">10</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-11">11</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-12">12</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-13">13</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-14">14</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-15">15</a>
-<a href="#rest_code_840ac76e70724755aafcf48611e0af70-16">16</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_840ac76e70724755aafcf48611e0af70-1"></a><span class="sd">"""</span>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-2"></a><span class="sd">Swedish-Chef talk Implementation.</span>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-3"></a><span class="sd">"""</span>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-4"></a>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-5"></a><span class="kn">import</span> <span class="nn">re</span>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-6"></a>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-7"></a><span class="k">def</span> <span class="nf">bork</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-8"></a>    <span class="sd">"""</span>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-9"></a><span class="sd">    Implementation of text transformation based on Swedish-Chef talk.</span>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-10"></a><span class="sd">    """</span>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-11"></a>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-12"></a>    <span class="c1"># Rules Here.</span>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-13"></a>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-14"></a>    <span class="c1"># Regular expression commands here</span>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-15"></a>
-<a name="rest_code_840ac76e70724755aafcf48611e0af70-16"></a>    <span class="k">pass</span>
+<td class="linenos"><div class="linenodiv"><pre><a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-1"> 1</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-2"> 2</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-3"> 3</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-4"> 4</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-5"> 5</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-6"> 6</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-7"> 7</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-8"> 8</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-9"> 9</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-10">10</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-11">11</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-12">12</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-13">13</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-14">14</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-15">15</a>
+<a href="#rest_code_586e8f6c85414a2ea305c952a77fa059-16">16</a></pre></div></td>
+<td class="code"><pre class="code python"><a name="rest_code_586e8f6c85414a2ea305c952a77fa059-1"></a><span class="sd">"""</span>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-2"></a><span class="sd">Swedish-Chef talk Implementation.</span>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-3"></a><span class="sd">"""</span>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-4"></a>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-5"></a><span class="kn">import</span> <span class="nn">re</span>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-6"></a>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-7"></a><span class="k">def</span> <span class="nf">bork</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-8"></a>    <span class="sd">"""</span>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-9"></a><span class="sd">    Implementation of text transformation based on Swedish-Chef talk.</span>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-10"></a><span class="sd">    """</span>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-11"></a>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-12"></a>    <span class="c1"># Rules Here.</span>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-13"></a>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-14"></a>    <span class="c1"># Regular expression commands here</span>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-15"></a>
+<a name="rest_code_586e8f6c85414a2ea305c952a77fa059-16"></a>    <span class="k">pass</span>
 </pre></td>
 </tr></table>
 <p>Here is our empty file, ready to be filled. It is quite fun to compare the differences between two screenshots and find the rules yourselves.
 But in case you want to skip to the part of coding, here are the regex rules for the project.</p>
 <table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-1"> 1</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-2"> 2</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-3"> 3</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-4"> 4</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-5"> 5</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-6"> 6</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-7"> 7</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-8"> 8</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-9"> 9</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-10">10</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-11">11</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-12">12</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-13">13</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-14">14</a>
-<a href="#rest_code_b48caebbbffb40ff84664cdcdf551759-15">15</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_b48caebbbffb40ff84664cdcdf551759-1"></a><span class="n">rules</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">r"(\be)"</span><span class="p">,</span> <span class="s2">r"i"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-2"></a>         <span class="p">(</span><span class="s2">r"(v)"</span><span class="p">,</span> <span class="s2">r"f"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-3"></a>         <span class="p">(</span><span class="s2">r"(w)"</span><span class="p">,</span> <span class="s2">r"v"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-4"></a>         <span class="p">(</span><span class="s2">r"(ew)"</span><span class="p">,</span> <span class="s2">r"oo"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-5"></a>         <span class="p">(</span><span class="s2">r"(ow)"</span><span class="p">,</span> <span class="s2">r"oo"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-6"></a>         <span class="p">(</span><span class="s2">r"(\bo\B)"</span><span class="p">,</span> <span class="s2">r"oo"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-7"></a>         <span class="p">(</span><span class="s2">r"(\Bo)"</span><span class="p">,</span> <span class="s2">r"u"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-8"></a>         <span class="p">(</span><span class="s2">r"(\Bu)"</span><span class="p">,</span> <span class="s2">r"oo"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-9"></a>         <span class="p">(</span><span class="s2">r"(\Bu)"</span><span class="p">,</span> <span class="s2">r"o"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-10"></a>         <span class="p">(</span><span class="s2">r"(\Be\b)"</span><span class="p">,</span> <span class="s2">r"e-a"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-11"></a>         <span class="p">(</span><span class="s2">r"(an)"</span><span class="p">,</span> <span class="s2">r"un"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-12"></a>         <span class="p">(</span><span class="s2">r"(\Ba|a\B)"</span><span class="p">,</span> <span class="s2">r"e"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-13"></a>         <span class="p">(</span><span class="s2">r"(\Bi\B)"</span><span class="p">,</span> <span class="s2">r"ee"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-14"></a>         <span class="p">(</span><span class="s2">r"(the)"</span><span class="p">,</span> <span class="s2">r"zee"</span><span class="p">),</span>
-<a name="rest_code_b48caebbbffb40ff84664cdcdf551759-15"></a>         <span class="p">(</span><span class="s2">r"(\Btion\b)"</span><span class="p">,</span> <span class="s2">r"shun"</span><span class="p">)]</span>
+<td class="linenos"><div class="linenodiv"><pre><a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-1"> 1</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-2"> 2</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-3"> 3</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-4"> 4</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-5"> 5</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-6"> 6</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-7"> 7</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-8"> 8</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-9"> 9</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-10">10</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-11">11</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-12">12</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-13">13</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-14">14</a>
+<a href="#rest_code_945073dab4ea412eb87b50c7be38c7ad-15">15</a></pre></div></td>
+<td class="code"><pre class="code python"><a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-1"></a><span class="n">rules</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">r"(\be)"</span><span class="p">,</span> <span class="s2">r"i"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-2"></a>         <span class="p">(</span><span class="s2">r"(v)"</span><span class="p">,</span> <span class="s2">r"f"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-3"></a>         <span class="p">(</span><span class="s2">r"(w)"</span><span class="p">,</span> <span class="s2">r"v"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-4"></a>         <span class="p">(</span><span class="s2">r"(ew)"</span><span class="p">,</span> <span class="s2">r"oo"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-5"></a>         <span class="p">(</span><span class="s2">r"(ow)"</span><span class="p">,</span> <span class="s2">r"oo"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-6"></a>         <span class="p">(</span><span class="s2">r"(\bo\B)"</span><span class="p">,</span> <span class="s2">r"oo"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-7"></a>         <span class="p">(</span><span class="s2">r"(\Bo)"</span><span class="p">,</span> <span class="s2">r"u"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-8"></a>         <span class="p">(</span><span class="s2">r"(\Bu)"</span><span class="p">,</span> <span class="s2">r"oo"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-9"></a>         <span class="p">(</span><span class="s2">r"(\Bu)"</span><span class="p">,</span> <span class="s2">r"o"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-10"></a>         <span class="p">(</span><span class="s2">r"(\Be\b)"</span><span class="p">,</span> <span class="s2">r"e-a"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-11"></a>         <span class="p">(</span><span class="s2">r"(an)"</span><span class="p">,</span> <span class="s2">r"un"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-12"></a>         <span class="p">(</span><span class="s2">r"(\Ba|a\B)"</span><span class="p">,</span> <span class="s2">r"e"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-13"></a>         <span class="p">(</span><span class="s2">r"(\Bi\B)"</span><span class="p">,</span> <span class="s2">r"ee"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-14"></a>         <span class="p">(</span><span class="s2">r"(the)"</span><span class="p">,</span> <span class="s2">r"zee"</span><span class="p">),</span>
+<a name="rest_code_945073dab4ea412eb87b50c7be38c7ad-15"></a>         <span class="p">(</span><span class="s2">r"(\Btion\b)"</span><span class="p">,</span> <span class="s2">r"shun"</span><span class="p">)]</span>
 </pre></td>
 </tr></table>
 <p>These are regular expressions, designed to match strings easier for specific conditions. For example (r"(ew)", r"oo") will make all ew's in the text oo.
-The letters escaped with backslash are special conditions which you should discover yourself for better memorizing. The order of the rules does matter.
-It is a different subject so I won't mention that here, but you can test the rules one by one, if you would like,
-for learning purposes and you can try making your own rules for other projects in <a class="reference external" href="https://regex101.com/">regex101</a>. It is the best website for newcomers
+The letters escaped with backslash are special conditions which you should discover yourself to memorize better. The order of the rules does matter but
+it is a different subject so I won't mention that here. You can test the rules one by one and try making your own rules for
+other projects in <a class="reference external" href="https://regex101.com/">regex101</a>. It is the best website for newcomers
 to regular expression as far as I searched. Now let us apply these rules to the <em>text</em> argument.</p>
-<pre class="code python"><a name="rest_code_97715a70ee04453f880d6eb81455b002-1"></a><span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">"|"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">rules</span><span class="p">)[</span><span class="mi">0</span><span class="p">]))</span>
-<a name="rest_code_97715a70ee04453f880d6eb81455b002-2"></a><span class="c1"># This is basically equivelant to this</span>
-<a name="rest_code_97715a70ee04453f880d6eb81455b002-3"></a><span class="c1"># (\be)|(v)|(w)|(ew)|(ow)|(\bo\B)|(\Bo)|(\Bu)|(\Bu)|(\Be\b)|(an)|(\Ba|a\B)|(\Bi\B)|(the)|(\Btion\b)</span>
+<pre class="code python"><a name="rest_code_b93f6c29684e407faa2dd7206248cac6-1"></a><span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">"|"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">rules</span><span class="p">)[</span><span class="mi">0</span><span class="p">]))</span>
+<a name="rest_code_b93f6c29684e407faa2dd7206248cac6-2"></a><span class="c1"># This is basically equivelant to this</span>
+<a name="rest_code_b93f6c29684e407faa2dd7206248cac6-3"></a><span class="c1"># (\be)|(v)|(w)|(ew)|(ow)|(\bo\B)|(\Bo)|(\Bu)|(\Bu)|(\Be\b)|(an)|(\Ba|a\B)|(\Bi\B)|(the)|(\Btion\b)</span>
 </pre>
 <p>This creates a pattern object for you to process. The example output is, as you see, all the rules wrapped up using the <em>or</em> operator ( | ) in regex.</p>
-<pre class="code python"><a name="rest_code_54ef8e0e8df443afa21caac0a0e748c6-1"></a><span class="n">pattern</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">rules</span><span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">lastindex</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
-<a name="rest_code_54ef8e0e8df443afa21caac0a0e748c6-2"></a><span class="c1"># x is the match object returned by all rules applied one by one the input text.</span>
-<a name="rest_code_54ef8e0e8df443afa21caac0a0e748c6-3"></a><span class="c1"># matchobject.lastindex is a method returns the index of the last matched rule in the text.</span>
-<a name="rest_code_54ef8e0e8df443afa21caac0a0e748c6-4"></a><span class="c1"># But it returns result indexed starting from 1, so we need to subtract 1 to acquire the indexes like it started from 0.</span>
+<pre class="code python"><a name="rest_code_6cef14bade4845ff9b9a2d9d6e0a2e59-1"></a><span class="n">pattern</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">rules</span><span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">lastindex</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+<a name="rest_code_6cef14bade4845ff9b9a2d9d6e0a2e59-2"></a><span class="c1"># x is the match object returned by all rules applied one by one the input text.</span>
+<a name="rest_code_6cef14bade4845ff9b9a2d9d6e0a2e59-3"></a><span class="c1"># matchobject.lastindex is a method returns the index of the last matched rule in the text.</span>
+<a name="rest_code_6cef14bade4845ff9b9a2d9d6e0a2e59-4"></a><span class="c1"># But it returns result indexed starting from 1, so we need to subtract 1 to acquire the indexes like it started from 0.</span>
 </pre>
 <p>This is the function subtitution used to swap text by the given rules. This is equivelant to this.</p>
-<pre class="code python"><a name="rest_code_e826522a059843c3853a1e873200a5dd-1"></a><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">rules</span><span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">lastindex</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+<pre class="code python"><a name="rest_code_6de3b045af604c1ea8f339e1b12d9640-1"></a><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">rules</span><span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">lastindex</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
 </pre>
 <p>You can use either one. This is the result text, so we should return this value.</p>
 <p>The function is now complete. Let's try a text with the current function.</p>
 <table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="#rest_code_9823161887ae4caca2f7fca8a43d7373-1">1</a>
-<a href="#rest_code_9823161887ae4caca2f7fca8a43d7373-2">2</a>
-<a href="#rest_code_9823161887ae4caca2f7fca8a43d7373-3">3</a>
-<a href="#rest_code_9823161887ae4caca2f7fca8a43d7373-4">4</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_9823161887ae4caca2f7fca8a43d7373-1"></a><span class="k">print</span><span class="p">(</span><span class="n">bork</span><span class="p">(</span><span class="s2">"""experienced programmers in any other</span>
-<a name="rest_code_9823161887ae4caca2f7fca8a43d7373-2"></a><span class="s2">language can pick up Python very quickly,</span>
-<a name="rest_code_9823161887ae4caca2f7fca8a43d7373-3"></a><span class="s2">and beginners find the clean syntax and indentation</span>
-<a name="rest_code_9823161887ae4caca2f7fca8a43d7373-4"></a><span class="s2">structure easy to learn. Whet your appetite with our Python 3 overview."""</span><span class="p">))</span>
+<td class="linenos"><div class="linenodiv"><pre><a href="#rest_code_bb4a6644234d47a9812ac7e7fc918599-1">1</a>
+<a href="#rest_code_bb4a6644234d47a9812ac7e7fc918599-2">2</a>
+<a href="#rest_code_bb4a6644234d47a9812ac7e7fc918599-3">3</a>
+<a href="#rest_code_bb4a6644234d47a9812ac7e7fc918599-4">4</a></pre></div></td>
+<td class="code"><pre class="code python"><a name="rest_code_bb4a6644234d47a9812ac7e7fc918599-1"></a><span class="k">print</span><span class="p">(</span><span class="n">bork</span><span class="p">(</span><span class="s2">"""experienced programmers in any other</span>
+<a name="rest_code_bb4a6644234d47a9812ac7e7fc918599-2"></a><span class="s2">language can pick up Python very quickly,</span>
+<a name="rest_code_bb4a6644234d47a9812ac7e7fc918599-3"></a><span class="s2">and beginners find the clean syntax and indentation</span>
+<a name="rest_code_bb4a6644234d47a9812ac7e7fc918599-4"></a><span class="s2">structure easy to learn. Whet your appetite with our Python 3 overview."""</span><span class="p">))</span>
 </pre></td>
 </tr></table>
 <p>When you run this, a text very close to the given screenshot will be produced. So now, we are close. But when writing a computer program, testing
 a unique input with a unique result can't be counted as sufficient testing. Let's handle that.</p>
 <p>Create a python file named test_chef.py, in the same file with your swedish_chef file.
 In that test_chef file:</p>
-<pre class="code python"><a name="rest_code_d6e087bd97774da19db4647ae4386b3b-1"></a><span class="kn">from</span> <span class="nn">swedish_chef</span> <span class="kn">import</span> <span class="n">bork</span>
-<a name="rest_code_d6e087bd97774da19db4647ae4386b3b-2"></a>
-<a name="rest_code_d6e087bd97774da19db4647ae4386b3b-3"></a><span class="c1"># Tests here.</span>
+<pre class="code python"><a name="rest_code_de01b7d0cdda4f1d8e28950f4756bca2-1"></a><span class="kn">from</span> <span class="nn">swedish_chef</span> <span class="kn">import</span> <span class="n">bork</span>
+<a name="rest_code_de01b7d0cdda4f1d8e28950f4756bca2-2"></a>
+<a name="rest_code_de01b7d0cdda4f1d8e28950f4756bca2-3"></a><span class="c1"># Tests here.</span>
 </pre>
 <p>But how to write unit tests ? If we wrote them, how to test efficiently ? Let's take a look at that.
 First install the pytest module. Needed information is given at their <cite>website &lt;http://pytest.org/latest/&gt;_</cite>.
 Also a nice and simple usage guide is provided. Now Let's write our tests.</p>
 <p>I will give you four of the tests I have written. I won't give the rest because, writing tests is much more important than actually finding the rules.
 Testing is usually the more boring but the most necessary part, which can devastate a whole project if done lightly.</p>
-<pre class="code python"><a name="rest_code_133ed1d50d26419daa22e4bca92909f3-1"></a><span class="c1"># Tests</span>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-2"></a>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-3"></a><span class="k">def</span> <span class="nf">test_final_tion_should_become_shun</span><span class="p">():</span>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-4"></a>    <span class="k">assert</span> <span class="n">bork</span><span class="p">(</span><span class="s1">'indentation'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'indenteshun'</span>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-5"></a>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-6"></a><span class="k">def</span> <span class="nf">test_i_in_middle_of_word_should_become_ee</span><span class="p">():</span>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-7"></a>    <span class="k">assert</span> <span class="n">bork</span><span class="p">(</span><span class="s1">'library'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'leebrery'</span>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-8"></a>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-9"></a><span class="k">def</span> <span class="nf">test_not_beginning_u_should_become_oo</span><span class="p">():</span>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-10"></a>    <span class="k">assert</span> <span class="n">bork</span><span class="p">(</span><span class="s1">'guides'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'gooeedes'</span>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-11"></a>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-12"></a><span class="k">def</span> <span class="nf">test_not_beginning_o_should_become_u</span><span class="p">():</span>
-<a name="rest_code_133ed1d50d26419daa22e4bca92909f3-13"></a>    <span class="k">assert</span> <span class="n">bork</span><span class="p">(</span><span class="s1">'python'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'pythun'</span>
+<pre class="code python"><a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-1"></a><span class="c1"># Tests</span>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-2"></a>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-3"></a><span class="k">def</span> <span class="nf">test_final_tion_should_become_shun</span><span class="p">():</span>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-4"></a>    <span class="k">assert</span> <span class="n">bork</span><span class="p">(</span><span class="s1">'indentation'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'indenteshun'</span>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-5"></a>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-6"></a><span class="k">def</span> <span class="nf">test_i_in_middle_of_word_should_become_ee</span><span class="p">():</span>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-7"></a>    <span class="k">assert</span> <span class="n">bork</span><span class="p">(</span><span class="s1">'library'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'leebrery'</span>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-8"></a>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-9"></a><span class="k">def</span> <span class="nf">test_not_beginning_u_should_become_oo</span><span class="p">():</span>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-10"></a>    <span class="k">assert</span> <span class="n">bork</span><span class="p">(</span><span class="s1">'guides'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'gooeedes'</span>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-11"></a>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-12"></a><span class="k">def</span> <span class="nf">test_not_beginning_o_should_become_u</span><span class="p">():</span>
+<a name="rest_code_7cd41d8e8e0548e380340c67a6d34af0-13"></a>    <span class="k">assert</span> <span class="n">bork</span><span class="p">(</span><span class="s1">'python'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'pythun'</span>
 </pre>
 <p>Find more tests to see if the program is running properly. You can use the screenshot as a base, or search through the internet.
 Now, how to use pytest. In the console, or the shell, <strong>cd</strong> to the directory which contains swedish_chef.py and test_chef.py .

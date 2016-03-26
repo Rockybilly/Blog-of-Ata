@@ -84,9 +84,9 @@ But in case you want to skip to the part of coding, here are the regex rules for
              
              
 These are regular expressions, designed to match strings easier for specific conditions. For example (r"(ew)", r"oo") will make all ew's in the text oo. 
-The letters escaped with backslash are special conditions which you should discover yourself for better memorizing. The order of the rules does matter.
-It is a different subject so I won't mention that here, but you can test the rules one by one, if you would like,
-for learning purposes and you can try making your own rules for other projects in `regex101 <https://regex101.com/>`_. It is the best website for newcomers
+The letters escaped with backslash are special conditions which you should discover yourself to memorize better. The order of the rules does matter but
+it is a different subject so I won't mention that here. You can test the rules one by one and try making your own rules for
+other projects in `regex101 <https://regex101.com/>`_. It is the best website for newcomers
 to regular expression as far as I searched. Now let us apply these rules to the *text* argument.
    
 .. code-block:: python

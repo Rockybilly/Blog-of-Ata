@@ -3,11 +3,10 @@
   <script type="text/javascript">
       var disqus_shortname = '{{ comment_system_id }}';
       var disqus_identifier = 'cache' + '{%- if identifier %}{{ identifier }}{%- else %}{{ permalink }}{%- endif %}';
-
       {% if hide_comments %}
       var disqus_script = 'count.js';
       {% else %}
-      var disqus_url = '{{root_url}}{{ permalink }}';
+      var disqus_url = 'http://atayardimci.me' + '{{root_url}}{{ permalink }}';
       var disqus_script = 'embed.js';
       {% endif %}
       (function () {
